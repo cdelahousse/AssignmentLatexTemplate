@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Christian's Assignment Latex Template
+%
+% Inspired by Simon Pratt's LatexTemplate (github.com/spratt/LatexTemplate)
+% Modified by Christian Delahousse (christian.delahousse.ca)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, twocolumn]{article}
+\usepackage{styles/Assignment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Assignment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\CourseAndAssignmentName{COMP4102}{Assignment 1}
+\StudentNameAndNumber{Christian Delahousse}{1828382475}
+
+\begin{document}
+
+\begin{question}
+  Type the question here.
+\end{question}
+\begin{answer}
+  And the answer here.
+\end{answer}
+
+\begin{question}
+  What's the complexity of Selection Sort?
+\end{question}
+\begin{answer}
+  %You need $ signs for inline math symbols (Math Mode).
+  That's easy. It's $\BigTheta{n^2}$.
+\end{answer}
+
+\begin{question}
+  What's the sum of the first $n$ natural numbers. Find the closed formed
+  expression of $\sum^{n}_{i=1}i$.
+\end{question}
+\begin{answer}
+  % Square brackets are used for more elaborate math (Display Math Mode).
+  \[
+    \sum^{n}_{i=1}i = 1 + 2 + \ldots + (n-1) + n = \frac{n(n+1)}{2}
+  \]
+\end{answer}
+
+\begin{question}
+  How should I continue using this file?
+\end{question}
+\begin{answer}
+  Modify this file and then run \texttt{make} at the command line.
+\end{answer}
+
+\end{document}
