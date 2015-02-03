@@ -23,11 +23,13 @@ TEX         = pdflatex
 
 TEXOPTS     = -halt-on-error
 
+NO_OUTPUT = 2>/dev/null 1>&2
+
 .PHONY: open clean
 
 # if your open program isn't listed, OR (||) it to the end
 open: ${PDF}
-	open $< || xdg-open $<
+	${NO_OUTPUT} open $< || ${NO_OUTPUT} xdg-open $< &
 
 ${PDF}: ${MAIN_TEX} ${PARTS_TEX} ${FIGURES}  ${STYLES_STY}
 

@@ -20,10 +20,11 @@ looking up LaTex symbols as you need them.
 
 ## Dependencies:
 LaTeX (TeX Live or MacTex), git (optional), GNU make (optional)
+
 ## Installation
 1. Fork the repository
 
-    `git clone https://github.com/spratt/LatexTemplate.git`
+    `git clone https://github.com/cdelahousse/AssignmentLatexTemplate.git`
 
 2. Download and install LateX
     * Ubuntu/Debian: `sudo apt-get install texlive build-essential`
